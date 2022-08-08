@@ -1,6 +1,5 @@
-import { Response } from 'express';
-import IRequest from './IRequest';
+import { Response, Request } from 'express';
 
 export default interface IController {
-  (req: IRequest, res: Response): void;
+  (req: Request, res: Response): void;
 }
